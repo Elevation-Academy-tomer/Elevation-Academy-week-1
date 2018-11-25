@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    
+
+</head>
+
+<body>
+    <div class="block">
+        <div id="container">
+            <div id="playing-field" class="centered">
+                <div id="block" class="centered"></div>
+            </div>
+            <div id="arrows" class="centered">
+                <div id="up" class="arrow" onclick="up()">&uarr;</div>
+                <div id="left" class="arrow" onclick="left()">&larr;</div>
+                <div id="right" class="arrow" onclick="right()">&rarr;</div>
+                <div id="down" class="arrow" onclick="down()">&darr;</div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <input type="text" placeholder="Who are you">
+        <button onclick="checkReservation()">checkReservation</button>
+        <div id="ex2"></div>
+    </div>
+    <div class="center">
+           <br><div id="container2"></div>
+        </div>
+        <br><br><div class="center" id="ok">
+                <div id="form">
+                    <span>Name</span><br>
+                    <div><input type="text" id="name"></div>
+                    <div><pspan >Desied Salary</span><span id="textH1">Birthday</span>
+                    <br><input type="number" id="salary">
+                    <input type="date" id="birtday">
+                    </div>
+                    <span>Phone</span><br>
+                    <input type="number" id="phone"><br><br>
+                    <div id="error"></div>
+                    <button onclick="validate()"class="move">Submit</button>
+                </div>
+             </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
